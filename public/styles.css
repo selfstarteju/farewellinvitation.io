@@ -1,0 +1,368 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+.header {
+    text-align: center;
+    padding: 30px 0;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.college-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo-container {
+    margin-right: 20px;
+}
+
+#college-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid white;
+    background-color: white;
+}
+
+.college-details {
+    text-align: center;
+}
+
+.college-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.college-location {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.department-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.event-title {
+    font-size: 2.2rem;
+    margin: 15px 0;
+}
+
+.date {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.event-quote {
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    padding: 0 20px;
+}
+
+/* Event Details Section */
+.event-details-section {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.event-details-section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #444;
+}
+
+.event-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.event-info-item {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.event-info-item h3 {
+    margin-bottom: 10px;
+    color: #6e8efb;
+}
+
+.event-info-item p {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Form Styles */
+.form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #444;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #6e8efb;
+    outline: none;
+}
+
+.btn {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn.secondary {
+    background: #f0f2f5;
+    color: #555;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Invitation Card Styles */
+.invitation-card {
+    background-color: white;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect fill="none" width="100" height="100"/><path fill="rgba(110, 142, 251, 0.1)" d="M30,10C17,10,10,17,10,30v40c0,13,7,20,20,20h40c13,0,20-7,20-20V30c0-13-7-20-20-20H30z"/></svg>');
+    background-size: 300px;
+    border: 5px solid #6e8efb;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.card-logo {
+    margin-right: 15px;
+}
+
+.card-logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #6e8efb;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-title h3 {
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 3px;
+}
+
+.card-title h4 {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 3px;
+}
+
+.card-title h5 {
+    font-size: 0.8rem;
+    color: #6e8efb;
+}
+
+.invitation-card h2 {
+    color: #6e8efb;
+    font-size: 1.8rem;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.invite-text {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.invite-text p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+#inviteeName {
+    font-weight: bold;
+    color: #a777e3;
+}
+
+.event-details {
+    background-color: rgba(110, 142, 251, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.event-details p {
+    margin-bottom: 8px;
+}
+
+.quote {
+    font-style: italic;
+    color: #666;
+    text-align: center;
+    margin: 20px 0;
+    padding: 0 20px;
+    font-size: 1.1rem;
+}
+
+.organized-by {
+    margin: 25px 0 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.organized-by p {
+    margin-bottom: 5px;
+}
+
+.invite-footer {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px dashed #ddd;
+    text-align: center;
+}
+
+#invitationId {
+    font-weight: bold;
+    color: #a777e3;
+}
+
+/* Footer */
+.main-footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .college-info {
+        flex-direction: column;
+    }
+    
+    .logo-container {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .college-name {
+        font-size: 1.5rem;
+    }
+    
+    .college-location {
+        font-size: 1.2rem;
+    }
+    
+    .department-name {
+        font-size: 1rem;
+    }
+    
+    .event-title {
+        font-size: 1.8rem;
+    }
+    
+    .event-info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .invitation-card {
+        padding: 20px;
+    }
+    
+    .card-header {
+        flex-direction: column;
+    }
+    
+    .card-logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior Farewell Invitation - SCSM Shrigonda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="college-info">
+                <div class="logo-container">
+                    <img id="college-logo" src="SHRIGONDA_SCSM_Logo.png" alt="College Logo">
+                </div>
+                <div class="college-details">
+                    <h1 class="college-name">SHRI CHHATRAPATI SHIVAJI MAHAVIDYALAYA</h1>
+                    <h2 class="college-location">SHRIGONDA</h2>
+                    <h3 class="department-name">Department of Computer Science</h3>
+                </div>
+            </div>
+            <h1 class="event-title">Senior Farewell Celebration</h1>
+            <p class="date">April 13, 2025</p>
+            <p class="event-quote">"Celebrating achievements, cherishing memories, and inspiring futures"</p>
+        </div>
+        
+        <div class="event-details-section">
+            <h2>Event Information</h2>
+            <div class="event-info-grid">
+                <div class="event-info-item">
+                    <h3>Date & Time</h3>
+                    <p>April 13, 2025</p>
+                    <p>5:00 PM onwards</p>
+                </div>
+                <div class="event-info-item">
+                    <h3>Venue</h3>
+                    <p>College Auditorium</p>
+                    <p>SCSM, Shrigonda</p>
+                </div>
+                <div class="event-info-item">
+                    <h3>Guest Lecture</h3>
+                    <p>Special industry insights</p>
+                    <p>Followed by interactive session</p>
+                </div>
+                <div class="event-info-item">
+                    <h3>Organized By</h3>
+                    <p>Department of Computer Science</p>
+                    <p>HOD: Prof. Amol Borade</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-container">
+            <h2>Register for the Event</h2>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="studentId">Student ID:</label>
+                    <input type="text" id="studentId" name="studentId" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="batch">Batch/Year:</label>
+                    <input type="text" id="batch" name="batch" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message for Seniors (Optional):</label>
+                    <textarea id="message" name="message" rows="3"></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Register & Get Invitation</button>
+            </form>
+        </div>
+        
+        <div id="invitationCard" class="invitation-card hidden">
+            <div class="card-content">
+                <div class="card-header">
+                    <div class="card-logo">
+                        <img id="college-logo" src="SHRIGONDA_SCSM_Logo.png" alt="College Logo">
+                    </div>
+                    <div class="card-title">
+                        <h3>SHRI CHHATRAPATI SHIVAJI MAHAVIDYALAYA</h3>
+                        <h4>SHRIGONDA</h4>
+                        <h5>Department of Computer Science</h5>
+                    </div>
+                </div>
+                
+                <h2>Senior Farewell Celebration</h2>
+                <div class="invite-text">
+                    <p>Dear <span id="inviteeName"></span>,</p>
+                    <p>We cordially invite you to join us for the Senior Farewell Celebration. As we bid farewell to our graduating batch, we celebrate their achievements and the memories we've created together.</p>
+                </div>
+                
+                <div class="event-details">
+                    <p><strong>Date:</strong> April 13, 2025</p>
+                    <p><strong>Time:</strong> 5:00 PM onwards</p>
+                    <p><strong>Venue:</strong> College Auditorium, SCSM Shrigonda</p>
+                    <p><strong>Special Event:</strong> Guest Lecture on Industry Trends</p>
+                </div>
+                
+                <p class="quote">"The future belongs to those who believe in the beauty of their dreams."</p>
+                
+                <div class="organized-by">
+                    <p>Organized by</p>
+                    <p>Department of Computer Science</p>
+                    <p>HOD: Prof. Amol Borade</p>
+                </div>
+                
+                <div class="invite-footer">
+                    <p>Your Invitation ID: <span id="invitationId"></span></p>
+                    <button id="downloadInvitation" class="btn">Download Invitation</button>
+                    <button id="backToForm" class="btn secondary">Register Another</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Department of Computer Science, SCSM Shrigonda</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
